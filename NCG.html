@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Configuration Generator</title>
+    <link rel="stylesheet" href="NCG.css">
+    <script src="NCG.js"></script>
+</head>
+
+    <nav>
+        <ul>
+            <li class="home"><a href="Main.html"><img src="Mimir Logo.png" alt="Button Image"></a></li>
+        <li class="dropdown">
+            <a class="split" class="button">Menu</a>
+            <div class="dropdown-content">
+        <a href="TOT.html" class="split" class="button">Types of Threats</a>
+        <a href="LN.html" class="split" class="button">Latest News</a>
+        <a href="BP.html" class="split" class="button">Best Practices</a>
+        <a href="PG.html" class="split" class="button">Password Generator</a>
+        <a href="IAG.html" class="split" class="button">IP Address Generator</a>
+        <a href="MAG.html" class="split" class="button">MAC Address Generator</a>
+        <a href="Interactive.html" class="split" class="button">Interactive</a></li>
+        <li><a href="AU.html" class="split" class="button">About Us</a></li>
+        <li><a href="UF.html" class="split" class="button">User Forum</a></li>
+        <li><a href="CU.html" class="split" class="button">Contact Us</a></li>
+        </div>
+            </ul>
+        </nav>
+
+        <br>
+        <br>
+        <br>
+
+        <header>
+            <h1>Network Configuration Generator</h1>
+            <br>
+            <hr>
+        </header>
+
+    <body>
+        <div class="container">
+            <form id="dnsForm" onsubmit="event.preventDefault(); generateNetworkConfiguration();">
+                <label for="preferredDNS">Choose preferred DNS:</label>
+                <br>
+                <select id="preferredDNS" name="preferredDNS">
+                    <option value="Google">Google</option>
+                    <option value="Cloudflare">Cloudflare</option>
+                </select>
+                <br>
+                <br>
+                <br>
+                <br>
+                <button type="submit">Generate Configuration</button>
+            </form>
+            <div id="output"></div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+</body>
+</html>
+
+<footer>
+    <p><center>&copy; 2023 Mimir. All rights reserved.</center></p>
+</footer>

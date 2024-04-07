@@ -1,0 +1,95 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mimir Security</title>
+    <link rel="stylesheet" href="PG.css"> 
+    <script src="passwordGenerator.js"></script> 
+    <script src="PasswordStrengthCalculator.js"></script>  
+
+</head>
+
+<nav>
+    <ul>
+        <li class="home"><a href="Main.html"><img src="Mimir Logo.png" alt="Button Image"></a></li>
+    <li class="dropdown">
+        <a class="split" class="button">Menu</a>
+        <div class="dropdown-content">
+    <a href="TOT.html" class="split" class="button">Types of Threats</a>
+    <a href="LN.html" class="split" class="button">Latest News</a>
+    <a href="BP.html" class="split" class="button">Best Practices</a>
+    <a href="PG.html" class="split" class="button">Password Generator</a>
+    <a href="IAG.html" class="split" class="button">IP Address Generator</a>
+    <a href="MAG.html" class="split" class="button">MAC Address Generator</a>
+    <a href="Interactive.html" class="split" class="button">Interactive</a></li>
+    <li><a href="AU.html" class="split" class="button">About Us</a></li>
+    <li><a href="UF.html" class="split" class="button">User Forum</a></li>
+    <li><a href="CU.html" class="split" class="button">Contact Us</a></li>
+    </div>
+        </ul>
+    </nav>
+
+<body>
+
+    <br>
+    <br>
+    <br>
+
+    <header>
+        <h1>Password Generator</h1>
+        <br>
+        <hr>
+    </header>
+    
+    <div class="password-sections">
+        <div class="password-section">
+    <h1>Generate Your Password</h1>
+    <label for="passwordLengthA">Password Length:</label>
+    <input type="number" id="passwordLengthA" min="8" max="32" value="12">
+    <br><br>
+    <input type="checkbox" id="includeDigitsA" checked>
+    <label for="includeDigitsA">Include Digits (0-9)</label>
+    <br><br>
+    <input type="checkbox" id="includeSpecialCharsA" checked>
+    <label for="includeSpecialCharsA">Include Special Characters</label>
+    <br><br>
+    <button onclick="generatePassword()">Generate Password</button>
+    <br><br>
+    <input type="text" id="generatedPasswordA" readonly>
+    <button onclick="copyToClipboardA()">Copy to Clipboard</button>
+        </div>
+
+        <div class="password-section">
+    <h1>Generate Numeric Password</h1>
+    <label for="passwordLengthN">Password Length:</label>
+    <input type="number" id="passwordLengthN" min="8" max="32" value="12">
+    <br><br>
+    <button onclick="generateNumericPassword()">Generate Numeric Password</button>
+    <br><br>
+    <input type="text" id="generatedPasswordN" readonly>
+    <button onclick="copyToClipboardN()">Copy to Clipboard</button>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <h1>Password Strength Calculator</h1>
+    <label for="password">Enter your password:</label>
+    <input type="password" id="password" oninput="checkPasswordStrength()">
+    <p id="strengthText"><center>Password Strength: <span id="strengthValue">0</span>/16</center></p>
+
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+</body>
+</html>
+
+<footer>
+        <p><center>&copy; 2023 Mimir. All rights reserved.</center></p>
+    </footer>

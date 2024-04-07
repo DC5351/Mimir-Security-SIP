@@ -1,0 +1,95 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mimir Security</title>
+    <link rel="stylesheet" href="Randomizer.css"> 
+    <script src="Ip.js"></script>
+</head>
+
+<nav>
+    <ul>
+        <li class="home"><a href="Main.html"><img src="Mimir Logo.png" alt="Button Image"></a></li>
+    <li class="dropdown">
+        <a class="split" class="button">Menu</a>
+        <div class="dropdown-content">
+    <a href="TOT.html" class="split" class="button">Types of Threats</a>
+    <a href="LN.html" class="split" class="button">Latest News</a>
+    <a href="BP.html" class="split" class="button">Best Practices</a>
+    <a href="PG.html" class="split" class="button">Password Generator</a>
+    <a href="IAG.html" class="split" class="button">IP Address Generator</a>
+    <a href="MAG.html" class="split" class="button">MAC Address Generator</a>
+    <a href="Interactive.html" class="split" class="button">Interactive</a></li>
+    <li><a href="AU.html" class="split" class="button">About Us</a></li>
+    <li><a href="UF.html" class="split" class="button">User Forum</a></li>
+    <li><a href="CU.html" class="split" class="button">Contact Us</a></li>
+    </div>
+        </ul>
+    </nav>
+
+<body>
+
+    <br>
+    <br>
+    <br>
+
+    <header>
+        <h1>IP Address Generator</h1>
+        <br>
+        <hr>
+    </header>
+
+    <p><center>A IP (Internet Protocol) address generator, 
+        despite its appearance it serves various applications. 
+        Let's have a look at its utility:</center></p>
+
+    <div class="main-content">
+        <p><b>Testing and Development:</b>
+            <br>
+        IP address generators are commonly used by software developers and network administrators for testing and development purposes. 
+        When configuring network equipment such as routers or servers, having a program that creates unique IP addresses makes the process easier. 
+        It ensures that every device has a unique identity. In addition, during system testing, you may need to mimic many devices on the network. 
+        A random IP address generator lets you build virtual devices for testing.</p>    
+    
+        <p><b>Privacy and Anonymity:</b>
+            <br>
+        IP address generators, like MAC address generators, can help protect your privacy. 
+        When you build a random IP address, you produce an identifier that is unrelated to any particular person or device. 
+        This can be handy in situations where you want to prevent tracking or remain anonymous. 
+        For example, when connecting to public Wi-Fi networks or utilizing temporary devices, a random IP address helps safeguard your privacy.</p>
+    
+        <p><b>Simulations and Educational Purposes:</b>
+            <br>
+            IP address generators are useful for constructing simulations. 
+            Researchers, educators, and analysts use them to model network activity, traffic patterns, and IP-based scenarios.Furthermore, 
+            producing sample data from random IP addresses can be useful for a variety of applications, including teaching and learning.</p>
+        </div>  
+    
+        <p><b>Enter the number of IP addresses you want</b></p>
+     <div class="addresses-section">
+        <input type="number" id="numAddresses" value="5" min="1">
+        <br>
+        <br>
+        <button onclick="generateRandomIP()">Generate Random Addresses</button>
+        </div>
+        <br>
+        <pre id="addresses"></pre>
+        <div class="addresses-section">
+        <button id="copyBtn" onclick="copyToClipboard()">Copy to clipboard</button>
+        </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+</body>
+</html>
+
+<footer>
+        <p><center>&copy; 2023 Mimir. All rights reserved.</center></p>
+    </footer>

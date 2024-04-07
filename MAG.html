@@ -1,0 +1,97 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mimir Security</title>
+    <link rel="stylesheet" href="Randomizer.css"> 
+    <script src="IPRandomizer.js"></script> 
+    <script src="MAG.js"></script>
+</head>
+
+<nav>
+    <ul>
+        <li class="home"><a href="Main.html"><img src="Mimir Logo.png" alt="Button Image"></a></li>
+    <li class="dropdown">
+        <a class="split" class="button">Menu</a>
+        <div class="dropdown-content">
+    <a href="TOT.html" class="split" class="button">Types of Threats</a>
+    <a href="LN.html" class="split" class="button">Latest News</a>
+    <a href="BP.html" class="split" class="button">Best Practices</a>
+    <a href="PG.html" class="split" class="button">Password Generator</a>
+    <a href="IAG.html" class="split" class="button">IP Address Generator</a>
+    <a href="MAG.html" class="split" class="button">MAC Address Generator</a>
+    <a href="Interactive.html" class="split" class="button">Interactive</a></li>
+    <li><a href="AU.html" class="split" class="button">About Us</a></li>
+    <li><a href="UF.html" class="split" class="button">User Forum</a></li>
+    <li><a href="CU.html" class="split" class="button">Contact Us</a></li>
+    </div>
+        </ul>
+    </nav>
+
+<body>
+
+    <br>
+    <br>
+    <br>
+
+    <header>
+        <h1>MAC Address Generator</h1>
+        <br>
+        <hr>
+    </header>
+
+<p><center>A MAC (Media Access Control) address generator, 
+    despite its appearance it serves various applications. 
+    Let's have a look at its utility:</center></p>
+
+    <div class="main-content">
+    <p><b>Testing and Development:</b>
+        <br>
+    Developers and network administrators frequently utilize MAC address generators for testing and development. 
+    When configuring network equipment such as routers or switches, 
+    having a tool that creates unique MAC addresses makes the process easier. 
+    It ensures that every device has a unique identity. 
+    In addition, during system testing, you may need to mimic many devices on the network. 
+    A random MAC address generator lets you construct virtual devices for testing.</p>
+
+    <p><b>Network Security Testing:</b>
+        <br>
+    For penetration testing and security assessments, security professionals employ randomly generated MAC addresses. 
+    They can simulate numerous devices and examine how the network behaves to different conditions by assigning multiple MAC addresses. 
+    It assists in identifying vulnerabilities, potential security gaps, and regions where unauthorized devices could obtain access.</p>
+
+    <p><b>Educational Purposes:</b>
+        <br>
+    Students studying networking or computer science can use MAC address generators to better understand how MAC addresses function. 
+    It offers hands-on experience in developing and manipulating these identifiers. 
+    Remember that the generated MAC addresses are normally intended for testing rather than production use.</p>
+    </div>  
+
+    <p><b>Enter the number of MAC addresses you want</b></p>
+    <div class="addresses-section">
+        <input type="number" id="numAddresses" value="5" min="1">
+        <br>
+        <br>
+        <button onclick="generateRandomMAC(event)">Generate Random Addresses</button>
+        </div>
+        <br>
+        <pre id="addresses"></pre>
+        <div class="addresses-section">
+            <button id="copyBtn" onclick="copyToClipboard()">Copy to clipboard</button>
+            </div>
+    
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    
+</body>
+</html>
+
+<footer>
+        <p><center>&copy; 2023 Mimir. All rights reserved.</center></p>
+    </footer>

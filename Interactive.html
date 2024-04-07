@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive</title>
+    <link rel="stylesheet" href="Interactive.css">
+</head>
+
+
+
+    <nav>
+        <ul>
+            <li class="home"><a href="Main.html"><img src="Mimir Logo.png" alt="Button Image"></a></li>
+        <li class="dropdown">
+            <a class="split" class="button">Menu</a>
+            <div class="dropdown-content">
+        <a href="TOT.html" class="split" class="button">Types of Threats</a>
+        <a href="LN.html" class="split" class="button">Latest News</a>
+        <a href="BP.html" class="split" class="button">Best Practices</a>
+        <a href="PG.html" class="split" class="button">Password Generator</a>
+        <a href="IAG.html" class="split" class="button">IP Address Generator</a>
+        <a href="MAG.html" class="split" class="button">MAC Address Generator</a>
+        <a href="Interactive.html" class="split" class="button">Interactive</a></li>
+        <li><a href="AU.html" class="split" class="button">About Us</a></li>
+        <li><a href="UF.html" class="split" class="button">User Forum</a></li>
+        <li><a href="CU.html" class="split" class="button">Contact Us</a></li>
+        </div>
+            </ul>
+        </nav>
+<body>   
+         
+    <br>
+    <br>
+    <br>
+
+    <header>
+        <h1>Interactive</h1>
+        <br>
+        <hr>
+    </header>
+
+    <section>
+        <div class="practice">
+            <h2>Step 1: Open PowerShell as Administrator</h2>
+            <ol>
+                <li>Click on the "Start" button.</li>
+                <li>Type "PowerShell" in the search bar.</li>
+                <li>Right-click on "Windows PowerShell" or "PowerShell."</li>
+                <li>Choose "Run as administrator."</li>
+            </ol>
+        </div>
+
+        <div class="practice">
+            <h2>Step 2: Copy and Paste Script in PowerShell</h2>
+            <ol>
+                <li>Highlight all of the script.</li>
+                <pre><code>
+function Check-UrlSecurity {
+    param (
+        [string]$url
+    )
+
+    try {
+        $uri = [System.Uri]$url
+
+        if ($uri.Scheme -eq "https") {
+            $request = [System.Net.HttpWebRequest]::Create($url)
+            $response = $request.GetResponse()
+
+            Write-Host "The site is secured (HTTPS)."
+        } elseif ($uri.Scheme -eq "http") {
+            Write-Host "The site is not secured (HTTP)."
+        } else {
+            Write-Host "Invalid URL scheme. Please enter a valid URL starting with 'http://' or 'https://'."
+        }
+    } catch {
+        Write-Host "Error occurred while checking the URL."
+    }
+}
+
+# Prompt the user for a URL
+$url = Read-Host "Enter the URL to check"
+
+# Call the function to check the URL security
+Check-UrlSecurity -url $url
+                </code></pre>
+                <li>Either press ctrl+c or right click and select copy.</li>
+                <li>Once copied, go to PowerShell and then press ctrl+v or right click and select paste.</li>
+            </ol>
+        </div>
+
+        <div class="practice">
+            <h2>Step 3: Run the Script</h2>
+            <ol>
+                <li>Press Enter</li>
+            </ol>
+        </div>
+
+        <div class="practice">
+            <h2>Step 4: Respond to Any Prompts</h2>
+            <p>Upon pressing enter, the script will then state “Enter the URL to check”</p>
+            <p>Example URL- https://website.com</p>
+        </div>
+
+        <div class="practice">
+            <h2>Step 5: See Results</h2>
+            <p>The script will then identify if the URL that was given is secured and provides a trusted certificate.</p>
+        </div>
+    </section>
+
+    <br>
+    <br> 
+
+</body>
+</html>
+
+
+
+<footer>
+        <p>&copy; 2023 Mimir. All rights reserved.</p>
+    </footer>
